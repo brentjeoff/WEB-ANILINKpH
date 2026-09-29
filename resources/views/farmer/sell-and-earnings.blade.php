@@ -91,10 +91,9 @@
                         <span>Orders Received</span>
                     </a>
 
-
                     <!-- Sales & Earnings -->
                     <a
-                        href="{{ route('farmer.sales.index') }}"
+                        href="/farmer/sell-and-earnings"
                         class="flex items-center justify-between px-4 py-3 bg-[#1C5B32] text-white rounded-lg font-medium shadow-sm"
                     >
                         <div class="flex items-center gap-3">
@@ -295,7 +294,7 @@
                                 @forelse($notifications ?? [] as $notification)
 
                                     <a
-                                        href="{{ route('farmer.sales.index') }}"
+                                        href="/farmer/sell-and-earnings"
                                         class="flex gap-3 px-4 py-3 hover:bg-stone-50 transition-colors border-b border-stone-100"
                                     >
 
@@ -509,7 +508,7 @@
                         <!-- DOWNLOAD -->
 
                         <a
-                            href="{{ route('farmer.sales.download') }}"
+                            href="{{ route('farmer.download-report') }}"
                             class="bg-white hover:bg-stone-50 border border-stone-300 text-stone-700 font-medium px-4 py-2 rounded-xl text-sm inline-flex items-center gap-2 transition-colors shadow-sm"
                         >
 
@@ -1006,7 +1005,7 @@
                     <!-- PAYOUT FORM -->
 
                     <form
-                        action="{{ route('farmer.sales.payout') }}"
+                        action="{{ route('farmer.request-payout') }}"
                         method="POST"
                         class="p-6 space-y-4"
                     >
