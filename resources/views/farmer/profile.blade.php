@@ -105,7 +105,7 @@
                     </a>
 
                     <!-- Sales & Earnings -->
-                    <a href="{{ route('farmer.sales.index') }}"
+                    <a href="/farmer/sell-and-earnings"
                         class="flex items-center gap-3 px-4 py-2.5 text-stone-700 hover:bg-stone-200/60 rounded-lg transition-colors font-medium">
 
                         <i data-lucide="circle-dollar-sign" class="w-5 h-5 text-stone-500"></i>

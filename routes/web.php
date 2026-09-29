@@ -318,7 +318,7 @@ Route::middleware(['auth'])->group(function () {
 
     // Farmer Sales & Earnings
     Route::get('/farmer/sell-and-earnings', [FarmerSalesController::class, 'index'])
-    ->name('farmer.sales.index');
+    ->name('farmer.sales');
 
     // Farmer payout
     Route::post('/farmer/request-payout', [FarmerSalesController::class, 'requestPayout'])
